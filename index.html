@@ -16,21 +16,76 @@
 
 <body>
 
-    <header class="col-12 p-4 text-white text-center fw-bold header">Weather App</header>
+    <header class="col-12 p-4 text-white text-center header">All City Weather</header>
 
     <main>
-        <form>
-            <div class="mb-3 col-3 search">
-                <label for="text" class="form-label city-search mt-1 fw-bold">Search City's</label>
-                <input type="search" class="form-control border-dark" id="weatherSearch" placeholder="city..." aria-describedby="city-search-bar">
-                <button type="submit" class="btn mt-2 col-12 border-dark">Search</button> 
-
-            </div>
-        </form>
-
-        <section class="col-9" id="apiWeather">
-
+        <section>
+            <form>
+                <div class="mb-3 col-4 search">
+                    <label for="text" class="form-label city-search mt-1 fw-bold">Search City's</label>
+                    <input type="search" class="form-control border-dark" id="weatherSearch" placeholder="city..." aria-describedby="city-search-bar">
+                    <button type="submit" class="btn mt-2 col-12 border-dark">Search</button> 
+                </div>
+                <div class="weather-info col-8">
+                    <div class="">
+                        <h1 class="city-name">Richmond<span class="today-date"></span></h1>
+                        <p class="temp">temp:</p>
+                        <p class="humidity">humid:</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="uv-index">UV:</p>
+                    </div>
+                </div>
+            </form>   
         </section>
+            <div class="forcast">
+                <h1 class="forcast-title col-md-3 mt-4">5 Day Outlook</h1>
+                    <div class="daily-outlook col-8 mt-2">
+                        <div class="day1">
+                            <p class="day">Monday</p>
+                            <p class="temp">temp:</p>
+                            <img src="" alt="weather icon">
+                            <p class="humidity">humid:</p>
+                            <p class="wind-speed">Wind speed:</p>
+                            <p class="uv-index">UV:</p>
+                        </div>
+                        <div class="day2">
+                            <p class="day">Tuesday:</p>
+                            <p class="temp">temp:</p>
+                            <img src="" alt="weather icon">
+                            <p class="humidity">humid:</p>
+                            <p class="wind-speed">Wind:</p>
+                            <p class="uv-index">UV:</p>
+                        </div>
+                        <div class="day3">
+                            <p class="day">Wednesday</p>
+                            <p class="temp">temp:</p>
+                            <img src="" alt="weather icon">
+                            <p class="humidity">humid:</p>
+                            <p class="wind-speed">Wind speed:</p>
+                            <p class="uv-index">UV:</p>
+                        </div>
+                        <div class="day4">
+                            <p class="day">Thursday</p>
+                            <p class="temp">temp:</p>
+                            <img src="" alt="weather icon">
+                            <p class="humidity">humid:</p>
+                            <p class="wind-speed">Wind speed:</p>
+                            <p class="uv-index">UV:</p>
+                        </div>
+                        <div class="day5">
+                            <p class="day">Friday</p>
+                            <p class="temp">temp:</p>
+                            <img src="" alt="weather icon">
+                            <p class="humidity">humid:</p>
+                            <p class="wind-speed">Wind speed:</p>
+                            <p class="uv-index">UV:</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        
+        
     </main>
 
 

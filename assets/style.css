@@ -1,6 +1,7 @@
 .header {
     background-image: linear-gradient(45deg, #2e2ae9, #7d7ceb 60% );
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .city-search {
@@ -10,5 +11,42 @@
 
 .btn {
     background-image: linear-gradient(45deg, #2e2ae9, #7d7ceb 60%);
+}
+
+main {
+    margin: 0 1rem;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-info {
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.forcast-title {
+    display: flex;
+    margin-left: 24rem;
+}
+
+.daily-outlook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24rem;
+}
+
+.day1, .day2, .day3, .day4, .day5 {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(24,24,27,0.6);
+    color: white;
+    border: solid 2px black;
 }
 
