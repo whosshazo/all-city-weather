@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./develop/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     
     
     <title>All City Weather | Your Weather, Our Watch</title>
@@ -16,14 +16,16 @@
 
 <body>
 
-    <header class="col-12 p-4 text-dark text-center fw-bold header">Weather App</header>
+    <header class="col-12 p-4 text-white text-center fw-bold header">Weather App</header>
 
     <main>
         <form>
             <div class="mb-3 col-3 search">
-                <label for="text" class="form-label city-search mt-1">Search City's</label>
-                <input type="search" class="form-control border-dark" id="weatherSearch" placeholder="city..." aria-describedby="emailHelp">
-                <button type="submit" class="btn mt-2 col-12 border-dark">Search</button>              </div>
+                <label for="text" class="form-label city-search mt-1 fw-bold">Search City's</label>
+                <input type="search" class="form-control border-dark" id="weatherSearch" placeholder="city..." aria-describedby="city-search-bar">
+                <button type="submit" class="btn mt-2 col-12 border-dark">Search</button> 
+
+            </div>
         </form>
 
         <section class="col-9" id="apiWeather">
