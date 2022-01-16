@@ -1,10 +1,6 @@
-var button = document.querySelector('.btn')
-var inputValue = document.querySelector('#weatherSearch')
+var API_KEY = "f90d646020d714f2dced46f00a203dcb";
 
-
-button.addEventListener('click',function(){
-    fetch()
-    .then(response => response.json())
-    .then(data => console.log(data))
-    
-})
+function getWeatherData(){
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={'API_KEY}")
+    console.log(data);
+}
