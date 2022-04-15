@@ -7,9 +7,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/script.js" defer></script>
+
     
     
-    <title>All City Weather | Your Weather, Our Watch</title>
+    <title>Ryan DeShazo | Weather API</title>
 
     
 </head>
@@ -23,63 +25,73 @@
             <form>
                 <div class="mb-3 col-4 search">
                     <label for="text" class="form-label city-search mt-1 fw-bold">Search City's</label>
-                    <input type="search" class="form-control border-dark" id="weatherSearch" placeholder="city..." aria-describedby="city-search-bar">
-                    <button type="submit" class="btn mt-2 col-12 border-dark">Search</button> 
+                    <input type="search" class="form-control border-dark" id="weather-search" placeholder="city..." aria-describedby="city-search-bar">
+                    <button type="submit" class="btn mt-2 col-12 border-dark" id="search-btn">Search</button> 
                 </div>
+                
                 <div class="weather-info col-8">
                     <div class="">
-                        <h1 class="city-name">Richmond<span class="today-date"></span></h1>
-                        <p class="temp">temp:</p>
-                        <p class="humidity">humid:</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="uv-index">UV:</p>
+                        <h1 class="city-name"><span class="today-date"></span></h1>
+                        <p class="temp"><span class="current-temp"></span></p>
+                        <p class="humidity"><span class="current-humidity"></span></p>
+                        <p class="wind-speed"><span class="current-wind-speed"></span></p>
+                        <p class="uv-index"><span class="current-uv"></span></p>
                     </div>
                 </div>
+                
             </form>   
         </section>
             <div class="forcast">
                 <h1 class="forcast-title col-md-3 mt-4">5 Day Outlook</h1>
-                    <div class="daily-outlook col-8 mt-2">
-                        <div class="day1">
-                            <p class="day">Monday</p>
+                <div class="city-container">
+                    <div class="city-row">
+                        <div class="city-wrapper btn-primary col-4">
+
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="daily-outlook col-8 mt-2 forecast-wrapper">
+                        <!-- <div class="forecast-block"> -->
+                            <!-- <p class="day"></p>
                             <p class="temp">temp:</p>
                             <img src="" alt="weather icon">
                             <p class="humidity">humid:</p>
                             <p class="wind-speed">Wind speed:</p>
-                            <p class="uv-index">UV:</p>
-                        </div>
-                        <div class="day2">
-                            <p class="day">Tuesday:</p>
+                            <p class="uv-index">UV:</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="forecast-block"> -->
+                            <!-- <p class="day">Tuesday:</p>
                             <p class="temp">temp:</p>
                             <img src="" alt="weather icon">
                             <p class="humidity">humid:</p>
                             <p class="wind-speed">Wind:</p>
-                            <p class="uv-index">UV:</p>
-                        </div>
-                        <div class="day3">
-                            <p class="day">Wednesday</p>
+                            <p class="uv-index">UV:</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="forecast-block"> -->
+                            <!-- <p class="day">Wednesday</p>
                             <p class="temp">temp:</p>
                             <img src="" alt="weather icon">
                             <p class="humidity">humid:</p>
                             <p class="wind-speed">Wind speed:</p>
-                            <p class="uv-index">UV:</p>
-                        </div>
-                        <div class="day4">
-                            <p class="day">Thursday</p>
+                            <p class="uv-index">UV:</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="forecast-block"> -->
+                            <!-- <p class="day">Thursday</p>
                             <p class="temp">temp:</p>
                             <img src="" alt="weather icon">
                             <p class="humidity">humid:</p>
                             <p class="wind-speed">Wind speed:</p>
-                            <p class="uv-index">UV:</p>
-                        </div>
-                        <div class="day5">
-                            <p class="day">Friday</p>
+                            <p class="uv-index">UV:</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="forecast-block"> -->
+                            <!-- <p class="day">Friday</p>
                             <p class="temp">temp:</p>
                             <img src="" alt="weather icon">
                             <p class="humidity">humid:</p>
                             <p class="wind-speed">Wind speed:</p>
-                            <p class="uv-index">UV:</p>
-                        </div>
+                            <p class="uv-index">UV:</p> -->
+                        <!-- </div> -->
                     </div>
             </div>
         </section>
@@ -91,9 +103,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="./assets/script.js"></script>
- 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 </body>
 
 </html>

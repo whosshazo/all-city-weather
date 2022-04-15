@@ -42,7 +42,7 @@ form {
     margin-left: 24rem;
 }
 
-.day1, .day2, .day3, .day4, .day5 {
+.forecast-block {
     padding: 5px 10px;
     border-radius: 10px;
     background-color: rgba(24,24,27,0.6);
